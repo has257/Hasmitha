@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-pixabay-235985.jpg'); /* Ensure you have a background image similar to the one in your screenshot */
+    background-size: cover;
+    color: #000;
+    text-align: center;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(248, 244, 244, 0.692);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.buttons .button, .more-info .button-more {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 25px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.buttons .button:hover, .more-info .button-more:hover {
+    background-color: rgb(255,255,255);
+}

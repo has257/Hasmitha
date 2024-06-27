@@ -1,0 +1,219 @@
+/*body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-pixabay-235985.jpg'); 
+    background-size: cover;
+    color: #080808;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(248, 244, 244, 0.692);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 750px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    background-color: #97f107;
+    
+
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #0c0c0c;
+    background-color: #97f107;
+
+}
+
+p, ul {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.back .button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.back .button:hover {
+    background-color: rgb(255, 255, 255);
+}*/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-pixabay-235985.jpg'); /* Same background image for consistency */
+    background-size: cover;
+    color: #080808;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-height: 1000px;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(248, 244, 244, 0.692);
+    border-radius: 10px;
+    width: 80%; /* Adjusted for a slightly wider container */
+    max-width: 1000px;
+    max-height: 1000px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    background-color: #97f107;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #0c0c0c;
+    background-color: #97f107;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p, ul {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0 15px; /* Add padding for better readability */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 100%; /* Default width to make the image responsive */
+    max-width: 250px; /* Ensure images do not exceed their container's width */
+    border-radius: 10px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.back .button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.back .button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1366px) {
+    .container {
+        width: 80%;
+        max-width: 800px;
+        max-height: 650px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    .image-gallery img {
+        max-width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    .back .button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 600px;
+        max-height: none; /* Allow for content overflow */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    p, ul {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .image-gallery img {
+        max-width: 100%; /* Ensure images take full width on smaller screens */
+        width: auto;
+    }
+
+    .back .button {
+        width: 90%;
+    }
+}
